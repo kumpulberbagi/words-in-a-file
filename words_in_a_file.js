@@ -32,7 +32,7 @@ function most_common_words(input, x) {
                 kata = arr[i];
             }
         }
-        hasil.push(jumlahkata +" "+ kata)
+        hasil.push(jumlahkata +" "+ kata+": "+jumlahkata+" occurrences")
         j++
         k++
     }
@@ -46,10 +46,10 @@ function most_common_words(input, x) {
     for (var i = 1; i < x+1; i++) {
       result += hasil[hasil.length-i] + row
     }
-    result =
+    //result =
     console.log("/*")
     console.log(result)
     console.log("*/")
 }
 
-most_common_words('source.txt', 3)
+most_common_words('source.txt', 4)
