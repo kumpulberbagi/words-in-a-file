@@ -32,7 +32,7 @@ function most_common_words(input, x) {
                 kata = arr[i];
             }
         }
-        hasil.push(jumlahkata +" "+ kata+": "+jumlahkata+" occurrences")
+        hasil.push(jumlahkata+" !"+" "+ kata+": "+jumlahkata+" occurrences")
         j++
         k++
     }
@@ -48,7 +48,7 @@ function most_common_words(input, x) {
     }
     //result =
     console.log("/*")
-    console.log(result)
+    console.log(result.replace(/\d{1,}\s!/g,""))
     console.log("*/")
 }
 
